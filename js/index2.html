@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        h1{
+            /* color: aqua; */
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- <h1 class="title">Javascript</h1> -->
+    <h2>Öğrenci Lİstesi</h2>
+
+    <ul class="list">
+        <li class="list-item">Ali</li>
+        <li class="list-item">Veli</li>
+        <li class="list-item">Ahmet</li>
+        <li class="list-item">Aslı</li>
+        <li class="list-item">Kürşat</li>
+    </ul>
+    <!-- <h1 class="title">Javascript</h1>
+    <h1 class="title" id="title2">Javascript</h1> -->
+    <script>
+        //! Tekli Seçiciler 
+    // const title = document.querySelector("h1")
+    // // title.remove()
+    // title.style.color = "red";
+    // const title2 = document.getElementById("title2")
+    // title2.style.color = "blue";
+
+    // document.querySelector("h1").style.color = "aqua"
+    // document.querySelector("h1").style.backgroundColor = "red"
+    // document.querySelector("h1").style.width = "250px"
+    // document.querySelector("h1").style.height = "100px"
+    // const title = document.querySelector("h1")
+    // console.log(title);
+    // title.innerText = "DOM";
+    // title.innerHTML = "<button>CLİCK</button>";
+    // const list = document.querySelector("ul")
+    // document.querySelector("li").style.color = "blueviolet"
+    // document.querySelector("li:nth-child(2)").style.color = "blue"
+    // document.querySelector("li:last-child").style.color = "pink"
+    
+
+    //! Çoklu Seçiciler
+
+    const listItem = document.getElementsByClassName("list-item");
+
+    for(let i = 0; i< listItem.lenght; i++){
+        listItem[i].style.color = "pink"
+    }
+    </script>
+</body>
+</html>
